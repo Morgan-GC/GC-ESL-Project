@@ -11,5 +11,8 @@ function createButton() {
     var button = document.createElement('BUTTON');    
     var text = document.createTextNode("create");     
     button.appendChild(text);    
-    myDiv.appendChild(button); ;
-    }
+    myDiv.appendChild(button); 
+    document.getElementById("first_button").remove();
+    this.remove();
+                        };
+    
