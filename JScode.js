@@ -12,6 +12,9 @@ function createButton() {
     var text = document.createTextNode("create");     
     button.appendChild(text);    
     myDiv.appendChild(button); 
+}
+
+ function deleteButton() {
     document.getElementById("first_button").remove();
-                         };
+ };
     
