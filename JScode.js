@@ -6,13 +6,16 @@ step 5: write functions that render button AND functions that delete buttons
 step 6: use functions from step 5 to make button dissapear and create new button ON CLICK (eventlistener)
 */
 
+
+document.addEventListener("click", createButton);
+
 function createButton() {
     var myDiv = document.getElementById("newButton");    
     var button = document.createElement('BUTTON');    
     var text = document.createTextNode("create");     
     button.appendChild(text);    
     myDiv.appendChild(button); 
-}
+};
 
  function deleteButton() {
     document.getElementById("first_button").remove();
