@@ -7,7 +7,7 @@ step 6: use functions from step 5 to make button dissapear and create new button
 */
 
 
-document.addEventListener("click", createButton);
+document.addEventListener("click",() => {createButton(); deleteButton()});
 
 function createButton() {
     var myDiv = document.getElementById("newButton");    
