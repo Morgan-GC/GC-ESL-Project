@@ -22,23 +22,29 @@ Step 9: Create a system that uses objects to describe to our code the flow of bu
 
 */
 
-const element = document.getElementById("firstbutton");
-element.addEventListener("click",() => {createButton(); deleteButton()}, false);
+var element = document.getElementById("buttons");
+element.addEventListener("click",() => {createButton1(); deleteButton()}, false);
 
-var newButtonsArr = ['button1','button2','button3']; 
+const buttonFlow1 = ['button1','button2','button3']; 
 
-function createButton() {
+
+function createButton1() {
   
-    for (var i = 0; i < newButtonsArr.length; i++) { 
+    for (var i = 0; i < buttonFlow1.length; i++) { 
 
     var button = document.createElement('BUTTON');    
-    var text = document.createTextNode(newButtonsArr[i]);     
+    var text = document.createTextNode(buttonFlow1[i]);     
     button.appendChild(text);    
     document.body.appendChild(button); 
     }
 };
 
+
+
+
+
+
  function deleteButton() {
-    document.getElementById("firstbutton").remove();
+    document.getElementById("buttons").remove();
  };
     
